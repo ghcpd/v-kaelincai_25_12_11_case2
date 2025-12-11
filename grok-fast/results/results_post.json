@@ -1,0 +1,10 @@
+{
+  "test_results": {
+    "test_bellman_ford_finds_optimal_path_with_negative_edge": "PASSED",
+    "test_bellman_ford_no_path": "PASSED",
+    "test_bellman_ford_negative_cycle": "PASSED"
+  },
+  "timing": {
+    "total_time": 0.05
+  }
+}

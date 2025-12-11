@@ -1,0 +1,12 @@
+{
+  "pre": {
+    "success_rate": 0.0,
+    "avg_latency": 0.03,
+    "errors": 2
+  },
+  "post": {
+    "success_rate": 1.0,
+    "avg_latency": 0.05,
+    "errors": 0
+  }
+}

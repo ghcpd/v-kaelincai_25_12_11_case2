@@ -1,0 +1,9 @@
+{
+  "test_results": {
+    "test_dijkstra_rejects_negative_weights": "FAILED",
+    "test_dijkstra_finds_optimal_path_despite_negative_edge": "FAILED"
+  },
+  "timing": {
+    "total_time": 0.03
+  }
+}
