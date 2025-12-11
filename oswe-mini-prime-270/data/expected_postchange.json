@@ -1,0 +1,4 @@
+[
+  {"name": "happy-path", "outbox_processed": true},
+  {"name": "timeout-then-replay", "outbox_processed": true}
+]

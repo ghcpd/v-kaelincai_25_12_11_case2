@@ -1,0 +1,3 @@
+[INFO] Scheduler start
+{"timestamp":"2025-12-11T00:00:00Z","service":"appointments.scheduler","request_id":"req-123","message":"enqueued outbox","component":"outbox"}
+{"timestamp":"2025-12-11T00:00:01Z","service":"appointments.scheduler","request_id":"req-123","message":"outbox processed","component":"outbox"}

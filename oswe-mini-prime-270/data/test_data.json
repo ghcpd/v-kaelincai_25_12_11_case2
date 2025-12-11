@@ -1,0 +1,24 @@
+[
+  {
+    "name": "happy-path",
+    "request": {
+      "request_id": "req-100",
+      "user_id": "u1",
+      "start_time": "2025-12-11T10:00:00Z",
+      "end_time": "2025-12-11T11:00:00Z",
+      "location": "Room 1"
+    },
+    "expected": {"outbox_processed": true}
+  },
+  {
+    "name": "timeout-then-replay",
+    "request": {
+      "request_id": "req-200",
+      "user_id": "u2",
+      "start_time": "2025-12-11T12:00:00Z",
+      "end_time": "2025-12-11T13:00:00Z",
+      "location": "Room 2"
+    },
+    "expected": {"outbox_processed": false}
+  }
+]
