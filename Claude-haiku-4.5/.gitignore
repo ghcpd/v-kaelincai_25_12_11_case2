@@ -1,0 +1,53 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+.env
+.env.*
+
+# Coverage and pytest cache
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Editors / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Logs, reports, and results
+logs/
+results/
+*.log
+*.out
+*.report
+
+# Data and generated fixtures
+data/
+
+# PowerShell execution cache
+*.ps1xml
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+nohup.out
