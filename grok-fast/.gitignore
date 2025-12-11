@@ -1,0 +1,41 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+.env
+.env.*
+
+# Pytest & coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build/package outputs
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+
+# Temp files
+*.tmp
+*.bak
+*.orig
+nohup.out

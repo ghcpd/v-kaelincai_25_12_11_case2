@@ -1,0 +1,2 @@
+2025-12-11 10:00:00 INFO Starting Bellman-Ford for A to B
+2025-12-11 10:00:01 INFO Path found: ['A', 'C', 'D', 'F', 'B'], cost: 1.0
