@@ -1,0 +1,7 @@
+{
+  "case_healthy": {"status": "confirmed"},
+  "case_transient_retry": {"status": "confirmed"},
+  "case_timeout_circuit": {"status": "failed_or_circuit"},
+  "case_idempotency": {"status": "confirmed", "idempotent": true},
+  "case_partial_confirm_fail_compensate": {"status": "compensated"}
+}

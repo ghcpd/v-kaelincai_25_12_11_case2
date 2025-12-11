@@ -1,0 +1,32 @@
+[
+  {
+    "id": "case_healthy",
+    "scenario": "healthy",
+    "payload": {"customer": "alice", "slot": "2025-12-20T10:00:00Z", "scenario": "healthy"},
+    "expect": {"status": "confirmed"}
+  },
+  {
+    "id": "case_transient_retry",
+    "scenario": "transient",
+    "payload": {"customer": "bob", "slot": "2025-12-20T11:00:00Z", "scenario": "transient"},
+    "expect": {"status": "confirmed", "retries": ">=1"}
+  },
+  {
+    "id": "case_timeout_circuit",
+    "scenario": "slow_avail",
+    "payload": {"customer": "carol", "slot": "2025-12-20T12:00:00Z", "scenario": "slow_avail"},
+    "expect": {"status": "failed_or_circuit"}
+  },
+  {
+    "id": "case_idempotency",
+    "scenario": "healthy",
+    "payload": {"customer": "dan", "slot": "2025-12-20T13:00:00Z", "scenario": "healthy"},
+    "expect": {"status": "confirmed", "idempotent": true}
+  },
+  {
+    "id": "case_partial_confirm_fail_compensate",
+    "scenario": "confirm_fail",
+    "payload": {"customer": "eve", "slot": "2025-12-20T14:00:00Z", "scenario": "confirm_fail"},
+    "expect": {"status": "compensated"}
+  }
+]
