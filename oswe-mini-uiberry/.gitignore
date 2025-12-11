@@ -1,0 +1,36 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+.env
+.env.*
+
+# Pytest and coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Editors/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Scripts outputs
+nohup.out
+
+# Temporary files
+*.tmp
+*.bak
+*.orig

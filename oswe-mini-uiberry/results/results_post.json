@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "id": "case_healthy",
+      "passed": true,
+      "result": {
+        "status": "confirmed",
+        "booking_id": "67e9a67a-ad10-4610-8aab-947353f2fcc8"
+      },
+      "result2": null,
+      "duration": 0.022224903106689453
+    },
+    {
+      "id": "case_transient_retry",
+      "passed": true,
+      "result": {
+        "status": "confirmed",
+        "booking_id": "53bb0629-42aa-47d1-9912-1ba079496406"
+      },
+      "result2": null,
+      "duration": 0.36081457138061523
+    },
+    {
+      "id": "case_timeout_circuit",
+      "passed": false,
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=5001): Read timed out. (read timeout=1.5)"
+    },
+    {
+      "id": "case_idempotency",
+      "passed": true,
+      "result": {
+        "status": "confirmed",
+        "booking_id": "f6ace637-2bdf-41b1-9358-f91c3810afe1"
+      },
+      "result2": {
+        "status": "confirmed",
+        "booking_id": "f6ace637-2bdf-41b1-9358-f91c3810afe1"
+      },
+      "duration": 0.03870391845703125
+    },
+    {
+      "id": "case_partial_confirm_fail_compensate",
+      "passed": true,
+      "result": {
+        "status": "compensated",
+        "booking_id": "01d1dbbb-2e9f-4344-8ab6-6319bd2952ff"
+      },
+      "result2": null,
+      "duration": 1.985504150390625
+    }
+  ],
+  "metrics": {
+    "total": 5,
+    "passed": 4,
+    "retries": 0,
+    "idempotent_hits": 1
+  }
+}
