@@ -1,0 +1,7 @@
+[
+  {"case":"healthy","idempotency_key":"key-healthy","user_id":"user-1","start_ts":"2025-12-12T10:00:00Z","duration_minutes":30},
+  {"case":"idempotency","idempotency_key":"key-idemp","user_id":"user-2","start_ts":"2025-12-12T11:00:00Z","duration_minutes":45},
+  {"case":"transient-fail","idempotency_key":"key-transient","user_id":"user-3","start_ts":"2025-12-12T12:00:00Z","duration_minutes":30},
+  {"case":"timeout-circuit","idempotency_key":"key-timeout","user_id":"user-4","start_ts":"2025-12-12T13:00:00Z","duration_minutes":60},
+  {"case":"provider-conflict","idempotency_key":"key-conflict","user_id":"user-5","start_ts":"2025-12-12T14:00:00Z","duration_minutes":20}
+]
