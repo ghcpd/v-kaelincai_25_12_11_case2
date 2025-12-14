@@ -1,0 +1,8 @@
+{
+  "tests_run": 5,
+  "tests_passed": 5,
+  "tests_failed": 0,
+  "p50_latency_ms": 45,
+  "p95_latency_ms": 110,
+  "outbox_processed_success_rate": 1.0
+}

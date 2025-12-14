@@ -1,0 +1,31 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+___________________ test_dijkstra_rejects_negative_weights ____________________
+
+graph = <logistics.graph.Graph object at 0x0000027E1D423200>
+
+    def test_dijkstra_rejects_negative_weights(graph):
+        """Expect a negative-weight-aware implementation to reject running Dijkstra."""
+>       with pytest.raises(ValueError, match="negative"):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests\test_routing_negative_weight.py:17: Failed
+___________ test_dijkstra_finds_optimal_path_despite_negative_edge ____________
+
+graph = <logistics.graph.Graph object at 0x0000027E1D454E00>
+
+    def test_dijkstra_finds_optimal_path_despite_negative_edge(graph):
+        """Even if allowed, the algorithm should find the optimal path (cost=1)."""
+        path, cost = dijkstra_shortest_path(graph, "A", "B")
+>       assert path == ["A", "C", "D", "F", "B"]
+E       AssertionError: assert ['A', 'B'] == ['A', 'C', 'D', 'F', 'B']
+E         
+E         At index 1 diff: 'B' != 'C'
+E         Right contains 3 more items, first extra item: 'D'
+E         Use -v to get more diff
+
+tests\test_routing_negative_weight.py:24: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_routing_negative_weight.py::test_dijkstra_rejects_negative_weights
+FAILED tests/test_routing_negative_weight.py::test_dijkstra_finds_optimal_path_despite_negative_edge
+2 failed in 0.05s
